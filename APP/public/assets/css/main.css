@@ -1,0 +1,102 @@
+/* Import carrega uma folha de estilo externa (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 41.25rem;
+  max-width: 100%;
+  border-radius: 0.625rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.helper-text {
+  margin: 0;
+  text-align: center;
+  color: #475569;
+}
+
+.sena-input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #cbd5e1;
+}
+
+.result {
+  min-height: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+
+.result.error {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.result.loading {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+.result.success {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border: 0.0625rem solid #e2e8f0;
+}
+
+
+
+.sena-list-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sena-row-balls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fafc, #ecf6ff);
+    gap: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 0.875rem;
+    border: 0.0625rem solid #e2e8f0;
+}
+.sena-ball {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #60a5fa, #1d4ed8);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0.35rem 0.85rem rgba(37, 99, 235, 0.22);
+}
